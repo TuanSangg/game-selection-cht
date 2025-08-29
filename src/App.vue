@@ -60,7 +60,7 @@ const items = [
   { img: '/img/2.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
   { img: '/img/3.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
   { img: '/img/4.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
-  { img: '/img/5.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
+  { img: '/img/5.gif', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
 ]
 
 const active = ref(1)
