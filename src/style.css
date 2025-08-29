@@ -55,6 +55,18 @@ header nav ul{
     width: 90%;
     filter: drop-shadow(0 0 20px #000);
 }
+
+.club {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    user-select: none;
+}
+
 .slider .content{
     position: absolute;
     bottom: 5%;

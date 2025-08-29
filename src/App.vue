@@ -1,6 +1,10 @@
 <template>
   <div>
     <header>
+      <div class="club">
+        <div>CHTCoder</div>
+      </div>
+
       <a href="https://github.com/vedokoush/game-selection-cht" target="_blank" rel="noopener" class="github-link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="github-icon">
           <path
@@ -26,7 +30,7 @@
             class="item"
             :class="{ active: active === index }"
         >
-          <img :src="item" />
+          <img :src="item.img" />
         </div>
       </div>
 
