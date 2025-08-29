@@ -37,7 +37,7 @@
       <div class="content">
         <div>game</div>
         <div>club day</div>
-        <button>Play</button>
+        <button @click="goToLink">Play</button>
       </div>
 
       <div class="arow">
@@ -52,17 +52,24 @@
 import { ref, onMounted, nextTick } from 'vue'
 
 const items = [
-  '/img/1.png',
-  '/img/2.png',
-  '/img/3.png',
-  '/img/4.png',
-  '/img/5.png',
+  { img: '/img/1.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
+  { img: '/img/2.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
+  { img: '/img/3.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
+  { img: '/img/4.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
+  { img: '/img/5.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
 ]
 
 const active = ref(1)
 const leftTransform = ref(0)
 const widthItem = ref(0)
 const circleRef = ref<HTMLDivElement | null>(null)
+
+function goToLink() {
+  const link = items[active.value].link
+  if (link) {
+    window.open(link, '_blank')
+  }
+}
 
 function runCarousel() {
   if (!widthItem.value) return
