@@ -1,6 +1,6 @@
-# 🎉 Club Day – Game Selection Slider
+# 🎉 CHT Club Day – Game Selection Slider
 
-This project was built for **CLUB DAY** at our school.  
+This project was built for **CHT CLUB DAY** at our school.  
 It provides a simple and interactive **game selection carousel** where students can browse different games and quickly access them by clicking **Play**.
 
 ---
