@@ -150,6 +150,29 @@ header nav ul{
     font-size: small;
     animation: circleRotate 20s linear infinite;
 }
+
+.github-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    z-index: 20;
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    fill: currentColor;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.github-link:hover .github-icon {
+    color: #bbb;
+    transform: scale(1.1);
+}
+
 @keyframes circleRotate{
     to{
         transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
