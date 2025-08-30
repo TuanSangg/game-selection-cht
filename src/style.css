@@ -215,3 +215,9 @@ header nav ul{
         transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
     }
 }
+
+@media (max-width: 768px) {
+  :root {
+    --radius: calc(100vw / 3);
+  }
+}

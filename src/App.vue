@@ -79,6 +79,7 @@ const active = ref(1)
 const leftTransform = ref(0)
 const widthItem = ref(0)
 const circleRef = ref<HTMLDivElement | null>(null)
+const viewportWidth = ref(0)
 
 function goToLink() {
   const link = items[active.value].link
@@ -89,7 +90,8 @@ function goToLink() {
 
 function runCarousel() {
   if (!widthItem.value) return
-  leftTransform.value = widthItem.value * (active.value - 1) * -1
+  const offset = (viewportWidth.value / 2) - (widthItem.value / 2)
+  leftTransform.value = offset - (active.value * widthItem.value)
 }
 
 function nextSlide() {
@@ -106,7 +108,9 @@ function prevSlide() {
   }
 }
 
-function updateWidth() {
+async function updateWidth() {
+  await nextTick()
+  viewportWidth.value = window.innerWidth
   const firstItem = document.querySelector<HTMLDivElement>('.list .item')
   if (firstItem) {
     widthItem.value = firstItem.offsetWidth
