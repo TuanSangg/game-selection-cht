@@ -64,7 +64,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, nextTick } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 const items = [
   { img: '/img/math.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Math', color: '#f2a6a5' },
@@ -106,11 +106,18 @@ function prevSlide() {
   }
 }
 
+function updateWidth() {
+  const firstItem = document.querySelector<HTMLDivElement>('.list .item')
+  if (firstItem) {
+    widthItem.value = firstItem.offsetWidth
+  }
+  runCarousel()
+}
+
 onMounted(async () => {
   await nextTick()
-  const firstItem = document.querySelector<HTMLDivElement>('.list .item')
-  if (firstItem) widthItem.value = firstItem.offsetWidth
-  runCarousel()
+  updateWidth()
+  window.addEventListener('resize', updateWidth)
 
   if (circleRef.value) {
     const textCircle = circleRef.value.innerText.split('')
@@ -124,5 +131,9 @@ onMounted(async () => {
       circleRef.value?.appendChild(newSpan)
     })
   }
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWidth)
 })
 </script>
