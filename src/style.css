@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Poppins;
+    overflow: hidden; /* Prevent scrollbars */
 }
 header{
     height: 50px;
@@ -9,7 +10,8 @@ header{
     align-items: center;
     padding: 5px 50px;
     box-sizing: border-box;
-    position: relative;
+    position: absolute; /* Changed to absolute */
+    width: 100%; /* Added to span full width */
     z-index: 10;
 }
 header nav ul{
@@ -24,13 +26,13 @@ header nav ul{
     --radius: calc(100vw / 6);
 }
 .slider{
-    width: 100vw;
+    width: 100%; /* Changed from 100vw */
     height: 100vh;
     overflow: hidden;
     position: relative;
     background-color: #17232A;
     background-image: radial-gradient(#fff3, transparent 50%);
-    margin-top: -50px;
+    /* margin-top: -50px; Removed */
 }
 .slider .list{
     position: absolute;
