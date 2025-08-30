@@ -31,6 +31,17 @@
             :class="{ active: active === index }"
         >
           <img :src="item.img" />
+          <div
+              class="label"
+              :style="{
+      background: 'rgba(0,0,0,0.35)',
+      color: item.color,
+      textShadow: `0 0 10px ${item.color}, 0 0 20px ${item.color}80, 0 0 30px ${item.color}60`,
+      border: `2px solid ${item.color}aa`
+    }"
+          >
+            {{ item.name }}
+          </div>
         </div>
       </div>
 
@@ -56,11 +67,12 @@
 import { ref, onMounted, nextTick } from 'vue'
 
 const items = [
-  { img: '/img/1.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
-  { img: '/img/2.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
-  { img: '/img/3.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
-  { img: '/img/4.png', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
-  { img: '/img/5.gif', link: 'https://youtu.be/xvFZjo5PgG0?si=xg41NxeUeyZsVSkL' },
+  { img: '/img/math.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Math', color: '#f2a6a5' },
+  { img: '/img/lit.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Literature', color: '#f0ce8a' },
+  { img: '/img/it.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'IT', color: '#00bfff' },
+  { img: '/img/geo.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Geography', color: '#92c07a' },
+  { img: '/img/physics.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Physics', color: '#edd07b' },
+  { img: '/img/chemistry.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Chemistry', color: '#ffffff' },
 ]
 
 const active = ref(1)
