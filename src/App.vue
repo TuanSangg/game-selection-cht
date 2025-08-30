@@ -67,12 +67,12 @@
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 const items = [
-  { img: '/img/math.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Math', color: '#f2a6a5' },
-  { img: '/img/lit.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Literature', color: '#f0ce8a' },
-  { img: '/img/it.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'IT', color: '#00bfff' },
-  { img: '/img/geo.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Geography', color: '#92c07a' },
-  { img: '/img/physics.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Physics', color: '#edd07b' },
-  { img: '/img/chemistry.PNG', link: 'https://youtu.be/xvFZjo5PgG0', name: 'Chemistry', color: '#ffffff' },
+  { img: '/img/math.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Math', color: '#f2a6a5' },
+  { img: '/img/lit.PNG', link: 'https://wordle-vi.thptchuyenhatinh.edu.vn/?fbclid=IwZXh0bgNhZW0CMTEAAR7cMDBzpyva9pjtgvyKusHuaiQFjljyBFMN2tikU_dOfyhPN8XllbjcPflNHg_aem_DKna8RQtHN7Re_CJ1YsNtg', name: 'Literature', color: '#f0ce8a' },
+  { img: '/img/it.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'IT', color: '#00bfff' },
+  { img: '/img/geo.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Geography', color: '#92c07a' },
+  { img: '/img/physics.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Physics', color: '#edd07b' },
+  { img: '/img/chemistry.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Chemistry', color: '#ffffff' },
 ]
 
 const active = ref(1)
