@@ -78,12 +78,13 @@ header nav ul{
     color: #eee;
     width: max-content;
 }
-.slider .content div:nth-child(2){
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: bold;
-    position: relative;
+.slider .content div:nth-child(2) {
+  font-size: clamp(24px, 8vw, 80px); 
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  position: relative;
+  line-height: 1.1;
 }
 .slider .content div:nth-child(2)::before{
     position: absolute;
@@ -96,10 +97,12 @@ header nav ul{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.slider .content div:nth-child(1){
-    text-align: left;
-    text-transform: uppercase;
-    transform: translateY(20px);
+.slider .content div:nth-child(1) {
+  font-size: clamp(14px, 3vw, 32px);
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .slider .content button{
     border: 1px solid #eee5;
@@ -110,6 +113,7 @@ header nav ul{
     border-radius: 20px;
     padding: 10px 20px;
 }
+
 
 .slider .list .item .label {
     position: absolute;
