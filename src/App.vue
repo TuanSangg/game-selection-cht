@@ -73,6 +73,9 @@ const items = [
   { img: '/img/geo.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Geography', color: '#92c07a' },
   { img: '/img/physics.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Physics', color: '#edd07b' },
   { img: '/img/chemistry.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Chemistry', color: '#ffffff' },
+  { img: '/img/biology.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Biology', color: '#103332' },
+  { img: '/img/english.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'English', color: '#e0b990' },
+  { img: '/img/his.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'History', color: '#a33e2c' },
 ]
 
 const active = ref(1)
