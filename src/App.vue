@@ -67,12 +67,12 @@
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 const items = [
-  { img: '/img/math.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Math', color: '#f2a6a5' },
+  { img: '/img/math.PNG', link: 'https://www.websudoku.com', name: 'Math', color: '#f2a6a5' },
   { img: '/img/lit.PNG', link: 'https://wordle-vi.thptchuyenhatinh.edu.vn/?fbclid=IwZXh0bgNhZW0CMTEAAR7cMDBzpyva9pjtgvyKusHuaiQFjljyBFMN2tikU_dOfyhPN8XllbjcPflNHg_aem_DKna8RQtHN7Re_CJ1YsNtg', name: 'Literature', color: '#f0ce8a' },
   { img: '/img/it.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'IT', color: '#00bfff' },
   { img: '/img/geo.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Geography', color: '#92c07a' },
-  { img: '/img/physics.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Physics', color: '#edd07b' },
-  { img: '/img/chemistry.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Chemistry', color: '#ffffff' },
+  { img: '/img/physics.PNG', link: 'https://8-ball-pool-html-5.vercel.app', name: 'Physics', color: '#edd07b' },
+  { img: '/img/chemistry.PNG', link: 'https://vehave.github.io/elements-snake-build', name: 'Chemistry', color: '#ffffff' },
 ]
 
 const active = ref(1)
