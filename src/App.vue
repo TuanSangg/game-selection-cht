@@ -68,19 +68,14 @@ import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 const items = [
   { img: '/img/math.PNG', link: 'https://www.websudoku.com', name: 'Math', color: '#f2a6a5' },
-  { img: '/img/lit.PNG', link: 'https://wordle-vi.thptchuyenhatinh.edu.vn/?fbclid=IwZXh0bgNhZW0CMTEAAR7cMDBzpyva9pjtgvyKusHuaiQFjljyBFMN2tikU_dOfyhPN8XllbjcPflNHg_aem_DKna8RQtHN7Re_CJ1YsNtg', name: 'Literature', color: '#f0ce8a' },
-  { img: '/img/it.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'IT', color: '#00bfff' },
-  { img: '/img/geo.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Geography', color: '#92c07a' },
-<<<<<<< HEAD
+  { img: '/img/lit.PNG', link: 'https://wordle-vi.thptchuyenhatinh.edu.vn/', name: 'Literature', color: '#f0ce8a' },
+  { img: '/img/it.PNG', link: 'https://www.codingame.com/events/171c9e6f1c96d1a4a6cc6be1c8deb674657', name: 'IT', color: '#00bfff' },
+  { img: '/img/geo.PNG', link: 'https://geoguessr.io/play', name: 'Geography', color: '#92c07a' },
   { img: '/img/physics.PNG', link: 'https://8-ball-pool-html-5.vercel.app', name: 'Physics', color: '#edd07b' },
   { img: '/img/chemistry.PNG', link: 'https://vehave.github.io/elements-snake-build', name: 'Chemistry', color: '#ffffff' },
-=======
-  { img: '/img/physics.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Physics', color: '#edd07b' },
-  { img: '/img/chemistry.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Chemistry', color: '#ffffff' },
-  { img: '/img/biology.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'Biology', color: '#103332' },
-  { img: '/img/english.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'English', color: '#e0b990' },
-  { img: '/img/his.PNG', link: 'https://github.com/vedokoush/game-selection-cht/tree/fallback', name: 'History', color: '#a33e2c' },
->>>>>>> 94dcc9047dd1de456579a8d8a1a66532c5452826
+  { img: '/img/biology.png', link: 'https://biology.thptchuyenhatinh.edu.vn', name: 'Biology', color: '#103332' },
+  { img: '/img/english.png', link: 'mikhad.github.io/wordle', name: 'English', color: '#e0b990' },
+  { img: '/img/his.png', link: 'https://guess-the-year.davjhan.com/game', name: 'History', color: '#a33e2c' },
 ]
 
 const active = ref(1)
