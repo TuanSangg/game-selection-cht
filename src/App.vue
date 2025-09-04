@@ -74,7 +74,7 @@ const items = [
   { img: '/img/physics.PNG', link: 'https://8-ball-pool-html-5.vercel.app', name: 'Physics', color: '#edd07b' },
   { img: '/img/chemistry.PNG', link: 'https://vehave.github.io/elements-snake-build', name: 'Chemistry', color: '#ffffff' },
   { img: '/img/biology.png', link: 'https://biology.thptchuyenhatinh.edu.vn', name: 'Biology', color: '#103332' },
-  { img: '/img/english.png', link: 'mikhad.github.io/wordle', name: 'English', color: '#e0b990' },
+  { img: '/img/english.png', link: 'https://mikhad.github.io/wordle/#daily', name: 'English', color: '#e0b990' },
   { img: '/img/his.png', link: 'https://guess-the-year.davjhan.com/game', name: 'History', color: '#a33e2c' },
 ]
 
